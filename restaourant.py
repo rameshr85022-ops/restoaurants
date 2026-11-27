@@ -25,9 +25,13 @@ else:
     price = 0
 
 total = price * quantity
+discount = total * 0.05
+final_bill = total - discount
 
 print("\n----- CUSTOMER BILL -----")
 print("Customer Name:", name)
 print("Food Item:", item)
 print("Quantity:", quantity)
 print("Total Bill: Rs.", total)
+print("Discount (5%): Rs.", discount)
+print("Final Bill: Rs.", final_bill)
